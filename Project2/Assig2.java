@@ -21,15 +21,29 @@ public class Assig2
         double tLabor = 0;
         double tCost = 0;
         Scanner useri = new Scanner(System.in);
-        System.out.println("What file would you like to read in?");
-        String input = useri.nextLine();
+        boolean isvalid = false;
 
-        File inData = new File(input);
+        File inData = null;
         Scanner dataIn = null;
-        try
-        {dataIn = new Scanner(inData);}
-        catch (Exception e){}
 
+        while (!isvalid)
+        {
+            System.out.println("What file would you like to read in?");
+            String input = useri.nextLine();
+
+            inData = new File(input);
+            
+            try
+            {
+                dataIn = new Scanner(inData);
+                isvalid = true;
+            }
+            catch (Exception e)
+            {
+                System.out.println("Please enter a valid file");
+            }
+
+        }
         while (dataIn.hasNextLine())
         {
             String firstStep = dataIn.nextLine();
@@ -90,22 +104,6 @@ public class Assig2
                 tMoves = tMoves + mrMoves;
                 System.out.println("Receiving " + mrCrates + " crates of bananas");
 
-                /*
-                int sCount = Integer.parseInt(dataIn.nextLine());
-                for(int i = 0; i < sCount; i++)
-                {
-                    int date = dataIn.nextInt();
-                    int count = dataIn.nextInt();
-                    double cost = dataIn.nextDouble();
-                    dataIn.nextLine();
-                    crates.push(new Crate(date, count, cost));
-                    mrCrates++;
-                    mrbCost = mrbCost + cost;
-                }
-                tCrates = tCrates + mrCrates;
-                tbCost = tbCost + mrbCost;
-                System.out.println("Receiving " + mrCrates + " crates of bananas");
-                */
             }
             if(firstStep.equals("use"))
             {
