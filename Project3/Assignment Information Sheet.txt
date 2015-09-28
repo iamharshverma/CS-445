@@ -1,0 +1,28 @@
+CS 0445 Assignment Information Sheet
+ 
+You must electronically submit an information sheet with every assignment. Also be sure to submit all materials following the procedures described on the submission procedures page.
+
+Name: Paul Davis Assignment #: 3
+
+Lecture Day and Time: T H 2:30PM-3:45PM SENSQ 5502
+
+Recitation Day and Time: F:11:00AM
+
+Program Due Date: 3/4/2015
+
+Handed in Date: 3/4/2015
+
+Source code (.java) file name(s): Assig3.java, Assig3B.java, findWord.java, bonus.txt
+
+Compiled (.class) file name(s): N/A
+
+Does your program compile without error?: Yes
+
+If not, what is/are the error(s)?: N/A
+
+Does your program run without error?: No
+
+If not, what is/are the error(s) and which parts of your program run correctly?: The backtracking doesn't always work
+
+Additional comments (including problems and extra credit): Assig3B.java finds the words recursively, so it is able to curve, and in bonus.txt find "rodents of unusual size", where as Assig3.java can only find the first 3 words.
+ 
