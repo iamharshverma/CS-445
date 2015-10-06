@@ -12,9 +12,6 @@
 // collection class for your MultiDS data.  However, you may want to use some
 // some additional instance variables to keep track of the data effectively.
 
-// Note: Later in the term we will discuss how to implement a queue in an
-// efficient way.
-
 public interface PrimQ<T>
 {
 	// Add a new Object to the PrimQ in the next available location.  If
