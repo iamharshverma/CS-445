@@ -1,11 +1,4 @@
 // CS 0445 Spring 2015
-// Assig1A driver program.  This program must work as is with your
-// MultiDS class.  Look carefully at all of the method calls so that
-// you create your MultiDS methods correctly.  For example, note the
-// constructor calls and the toString() method call.  The output should
-// be identical to my sample output, with the exception of the result of
-// the shuffle() methods -- since this should be random yours should not
-// match mine.
 public class Assig1A
 {
 	public static void main(String [] args)
@@ -56,8 +49,7 @@ public class Assig1A
 		int sz = theQ2.size();
 		System.out.println("There are " + sz + " items in the buffer");
 
-		// This code will test the toString() method and the Reorder
-		// interface.
+		// Test the toString() method and the Reorder interface.
 		System.out.println("\nAbout to test Reorder methods");
 		MultiDS<Integer> newDS = new MultiDS<Integer>(15);
 		for (int i = 0; i < 8; i++)
