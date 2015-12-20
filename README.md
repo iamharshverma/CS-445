@@ -1,3 +1,3 @@
-# 445
+**Cs 445 Pitt Spring 2015**
 
-Projects I did for 445 Data Structures. 
+Projects for CS 445 Data Structures. 
